@@ -1,6 +1,7 @@
 var app = require('express')();
 var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var server = app.listen(5001);
+var io = require('socket.io').listen(server);
 var express = require('express');
 
 var clients = {}; 
@@ -32,6 +33,6 @@ io.on("connection", function (client) {
 });
 
 
-http.listen(3000, function(){
-  console.log('listening on port 3000');
+http.listen(5000, function(){
+  console.log('listening on port 5000');
 });
