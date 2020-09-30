@@ -6,10 +6,6 @@ var express = require('express');
 
 var clients = {}; 
 
-//app.get('/', function(req, res){
-//  res.send('server is running');
-//});
-
 app.use('/', express.static(__dirname + '/front'));
 
 io.on("connection", function (client) {  
