@@ -8,4 +8,4 @@ Just run "node app.js" and open http://localhost:3000 in your browser
 (The MIT License)
 
 ## Author
-Lucas Anjos
+Lucas Anjos (:
